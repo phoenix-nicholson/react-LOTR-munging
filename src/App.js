@@ -29,7 +29,6 @@ function App() {
       ]);
 
       setFilms(newData);
-      return [films];
     };
     const getCharacters = async () => {
       const resp = await fetch(`${process.env.REACT_APP_SUPABASE_URL}/rest/v1/characters`, {
@@ -49,12 +48,11 @@ function App() {
       });
 
       setCharacters(newData);
-      return [characters];
     };
 
     getFilms();
     getCharacters();
-  }, [characters, films]);
+  }, []);
 
   return (
     <div className="App">
