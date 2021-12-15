@@ -66,14 +66,14 @@ function App() {
           </NavLink>
         </header>
         {
-          <Switch>
-            <Route path="/films">
-              <FilmList films={films} />
-            </Route>
-            <Route path="/characters">
-              <CharacterList characters={characters} />
-            </Route>
-          </Switch>
+          // <Switch>
+          //   <Route path="/films">
+          //     <FilmList films={films} />
+          //   </Route>
+          //   <Route path="/characters">
+          //     <CharacterList characters={characters} />
+          //   </Route>
+          // </Switch>
         }
       </BrowserRouter>
     </div>
